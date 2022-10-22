@@ -6,7 +6,7 @@ import json
 from datetime import datetime
 
 app = Flask(__name__)
-
+port = int(os.environ.get('PORT', 5000))
 @app.route('/', methods=['GET', 'POST'])
 def index():
     if request.method == 'GET':
@@ -42,4 +42,4 @@ def index():
             return render_template('output.html', **Result)
 
 if __name__ == '__main__':
-    app.run(debug=True, host='localhost', port=3000)
+    app.run(host='0.0.0.0', port=port, debug=True)
