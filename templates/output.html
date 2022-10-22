@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Stock Profit Calculator</title>
+  </head>
+  <style>
+    h1 {
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    table {
+      border-collapse: collapse;
+      width: 100%;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    th,
+    td {
+      text-align: left;
+      padding: 8px;
+    }
+
+    tr:nth-child(even) {
+      background-color: #f2f2f2;
+    }
+  </style>
+  <body>
+    <h1>Stock Details:</h1>
+    <table>
+      <tbody>
+        <tr>
+          <td><b>Date and Time:</b></td>
+          <td>{{dateTimeNow}}</td>
+        </tr>
+
+        <tr>
+          <td><b>Name:</b></td>
+          <td>{{NameofCompany}}</td>
+        </tr>
+
+        <tr>
+          <td><b>Stock Price:</b></td>
+          <td>{{price}}</td>
+        </tr>
+
+        <tr>
+          <td><b>Value Change:</b></td>
+          <td>{{valueChange}}</td>
+        </tr>
+
+        <tr>
+          <td><b> Percentage Change:</b></td>
+          <td>{{percentageChange}} %</td>
+        </tr>
+      </tbody>
+    </table>
+    <br /><br />
+  </body>
+</html>

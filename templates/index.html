@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Stock Profit Calculator</title>
+    <style>
+      body {
+        font-family: Times New Roman, Helvetica, sans-serif;
+      }
+      * {
+        box-sizing: border-box;
+      }
+
+      input[type="text"],
+      select,
+      textarea {
+        width: 100%;
+        padding: 12px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        resize: vertical;
+        margin-top: 20px;
+      }
+
+      input[type="submit"],
+      input[type="reset"] {
+        background-color: rgb(21, 189, 27);
+        color: white;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        margin-top: 20px;
+      }
+
+      input[type="submit"]:hover,
+      input[type="reset"]:hover {
+        background-color: green;
+      }
+
+      .container {
+        border-radius: 5px;
+        background-color: #f2f2f2;
+        padding: 20px;
+        margin-left: 20px;
+      }
+      h1 {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      body {
+        margin-left: 25%;
+        margin-top: 10%;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <p>&nbsp;</p>
+    <h1>Stock Details from API</h1>
+    <h4>{{msg}}</h4>
+
+    <form action="/" method="POST">
+      <table>
+        <tbody>
+          <tr>
+            <td></td>
+            <td>
+              <input
+                name="symbol"
+                type="text"
+                placeholder="Enter ticker symbol"
+              />
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
+      <input type="submit" value="Submit" />
+      <input value="Clear" type="reset" />
+    </form>
+
+    <p>&nbsp;</p>
+  </body>
+</html>
